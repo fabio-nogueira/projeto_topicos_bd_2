@@ -3,6 +3,6 @@ import csv
 
 es = Elasticsearch()
 
-with open('Date=2004-10-01.csv') as f:
+with open('Date=2004-10-02.csv') as f:
     reader = csv.DictReader(f)
-    helpers.bulk(es, reader, index='my-index', doc_type='my-type')
+    helpers.bulk(es, reader, index='index2004')
